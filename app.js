@@ -7,7 +7,7 @@ const {MONGOURL} = require('./config/keys')
 const path = require("path");
 
 
-mongoose.connect(MONGOURL,{
+mongoose.connect("mongodb+srv://test-anurag:test123@cluster0.g2tqnwo.mongodb.net/instagramClone",{
     useNewUrlParser:true,
     useUnifiedTopology: true
 
