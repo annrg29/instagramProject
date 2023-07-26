@@ -1,8 +1,10 @@
 const express = require('express')
 const app = express()
 const mongoose  = require('mongoose')
+app.use(express.json());
 const PORT = process.env.PORT || 5000
 const {MONGOURL} = require('./config/keys')
+const path = require("path");
 
 
 mongoose.connect(MONGOURL,{
